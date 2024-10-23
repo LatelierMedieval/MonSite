@@ -7,66 +7,54 @@
 
 /* HEADER */
 
-header{
-    position:fixed;
-    background-color: #dedede;
+header {
+    position: fixed;
+    background-color: #5da2e2;
     width: 100vw;
     top: 0;
     left: 0;
-    height: 60px;
+    height: 80px; /* Hauteur du header */
+    display: flex;
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: space-between; /* Éspace entre le logo et le menu */
     z-index: 999;
+    padding: 0 20px; /* Ajoute du padding pour que le contenu ne touche pas les bords */
 }
 
-header i{
-    position: absolute;
-    color: #fff;
-    transform: scale(2);
+header img {
+    width: 60px; /* Taille du logo */
 }
 
-header img{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 12.5px;
-    width: 55;
+header p {
+    position: absolute; /* Permet de positionner indépendamment du flexbox */
+    left: 100px; /* Ajuste la distance par rapport au côté gauche */
+    top: 25px; /* Ajuste la position verticale */
+    color: #ffffff;
+    font-size: x-large;
 }
 
-header p{
-    position: absolute;
-    height: 30px;
-    margin-left: 100px;
-    color: #003693;
-    top: 20px;
-    font-size: large;
-}
-
-header nav {
-    position: absolute;
-    right: 20px; /* Aligné vers la droite */
-    top: 15px; /* Position verticale pour centrer par rapport au header */
+header nav{
+    margin-right: 40px;
 }
 
 header nav ul {
     list-style: none;
-    display: flex; /* Afficher les onglets en ligne */
+    display: flex;
     gap: 20px; /* Espacement entre les onglets */
-}
-
-header nav ul li {
-    display: inline;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #003693; /* Couleur du texte des liens */
-    font-size: medium;
-    padding: 10px 15px; /* Ajout d'un peu de padding pour l'espacement interne */
+    color: #ffffff; /* Couleur du texte des liens */
+    font-size: x-large;
+    padding: 20px 15px; /* Ajout d'un peu de padding pour l'espacement interne */
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    background-color: #003693; /* Couleur de fond lors du survol */
-    color: #fff; /* Couleur du texte lors du survol */
+    background-color: #ffffff; /* Couleur de fond lors du survol */
+    color: #5da2e2; /* Couleur du texte lors du survol */
 }
 
 /* FOOTER */
@@ -107,9 +95,17 @@ footer{
     width: 100%;
     padding: 1rem;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title{
     margin-top: 20px;
     text-align: center;
+}
+
+img{
+    max-width: 80%;
+    height: auto;
 }
