@@ -5,8 +5,17 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que la page occupe toute la hauteur de l'écran */
+}
+
 /* HEADER */
 
+/* Style du header */
+/* Style du header */
+/* Style du header */
 header {
     position: fixed;
     background-color: #5da2e2;
@@ -33,7 +42,7 @@ header p {
     font-size: x-large;
 }
 
-header nav{
+header nav {
     margin-right: 40px;
 }
 
@@ -41,6 +50,10 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 20px; /* Espacement entre les onglets */
+}
+
+header nav ul li {
+    position: relative; /* Permet de positionner le sous-menu */
 }
 
 header nav ul li a {
@@ -52,60 +65,117 @@ header nav ul li a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover,
+header nav ul li:hover > a {
     background-color: #ffffff; /* Couleur de fond lors du survol */
     color: #5da2e2; /* Couleur du texte lors du survol */
 }
 
+/* Style du menu déroulant */
+.dropdown-content {
+    display: none; /* Cache le sous-menu par défaut */
+    position: absolute;
+    top: 45px; /* Place le sous-menu juste en dessous du header */
+    left: 0; /* Aligne à gauche */
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Affiche le sous-menu lors du survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style des items dans le sous-menu */
+.dropdown-content li {
+    width: 180px;
+}
+
+.dropdown-content li a {
+    padding: 10px 20px;
+    text-align: left;
+    color: #5da2e2;
+    font-size: large;
+    display: block; /* S'assure que le lien prend toute la largeur */
+}
+
+.dropdown-content li a:hover {
+    background-color: #5da2e2;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Ajustement de l'espace pour éviter que le menu ne disparaisse */
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 0; /* Empêche un espace entre le bouton et le sous-menu */
+    width: auto; /* Ajuste la largeur pour qu'elle soit dynamique */
+}
+
+/* Ajout d'un padding pour le dropdown pour le rapprocher de son parent */
+.dropdown-content {
+    padding-top: 10px; /* Ajoute un espace au-dessus du sous-menu pour le rapprocher */
+}
+
 /* FOOTER */
 
-footer>*{
-    position: absolute;
-    bottom: 0px;
-}
-
-footer{
-    position: relative;
+footer {
     background-color: #dedede;
-    height: 120px;
+    height: 50px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 900;
-}
-
-/* SEPARATOR */
-
-.separator{
-    height: 1px;
-    background-color: #003693;
-    width: 100%;
-    margin: 20px 0px;
-}
-
-/*MAIN CONTENT*/
-.main-content{
-    position: relative;
-    background-color: #f4f4f4;
-    margin-top: 40px;
-    margin-bottom: -22px;
-    height: auto;
-    min-height: 105vh; /*pour que ça fasse minimum une page en entier*/
-    transition: all 0.5s ease;
-    width: 100%;
-    padding: 1rem;
-    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.title{
-    margin-top: 20px;
+
+/*MAIN CONTENT*/
+.main-section {
+    flex-grow: 1; /* Permet à la section principale de prendre tout l'espace disponible */
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    position: relative; /* Nécessaire pour que l'élément <a> prenne toute la place */
+    width: 48%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-img{
-    max-width: 80%;
-    height: auto;
+.full-column-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Retirer le soulignement */
+    color: inherit; /* Conserve la couleur de texte du parent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-column-link:hover {
+    background-color: #e0e0e0; /* Change la couleur de fond au survol si désiré */
+    color: #5da2e2; /* Change la couleur de texte au survol */
 }
