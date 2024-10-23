@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    background-color: #dedede;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 999;
+}
+
+header i{
+    position: absolute;
+    color: #fff;
+    transform: scale(2);
+}
+
+header img{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 12.5px;
+    width: 55;
+}
+
+header p{
+    position: absolute;
+    height: 30px;
+    margin-left: 100px;
+    color: #003693;
+    top: 20px;
+    font-size: large;
+}
+
+header nav {
+    position: absolute;
+    right: 20px; /* Aligné vers la droite */
+    top: 15px; /* Position verticale pour centrer par rapport au header */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex; /* Afficher les onglets en ligne */
+    gap: 20px; /* Espacement entre les onglets */
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #003693; /* Couleur du texte des liens */
+    font-size: medium;
+    padding: 10px 15px; /* Ajout d'un peu de padding pour l'espacement interne */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #003693; /* Couleur de fond lors du survol */
+    color: #fff; /* Couleur du texte lors du survol */
+}
+
+/* FOOTER */
+
+footer>*{
+    position: absolute;
+    bottom: 0px;
+}
+
+footer{
+    position: relative;
+    background-color: #dedede;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 900;
+}
+
+/* SEPARATOR */
+
+.separator{
+    height: 1px;
+    background-color: #003693;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+/*MAIN CONTENT*/
+.main-content{
+    position: relative;
+    background-color: #f4f4f4;
+    margin-top: 40px;
+    margin-bottom: -22px;
+    height: auto;
+    min-height: 105vh; /*pour que ça fasse minimum une page en entier*/
+    transition: all 0.5s ease;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.title{
+    margin-top: 20px;
+    text-align: center;
+}
