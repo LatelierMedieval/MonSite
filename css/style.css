@@ -145,37 +145,38 @@ footer {
     height: auto;
 }
 
-.columns {
+.container {
     display: flex;
-    justify-content: space-between;
+    gap: 20px; /* Espace entre les cases */
+    max-width: 200px;
+    height: fit-content;
 }
 
-.column {
-    position: relative; /* Nécessaire pour que l'élément <a> prenne toute la place */
-    width: 48%;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border: 1px solid #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.container a {
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: inherit; /* Utilise la couleur de texte héritée pour le texte */
 }
 
-.full-column-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-decoration: none; /* Retirer le soulignement */
-    color: inherit; /* Conserve la couleur de texte du parent */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.item {
+    display: block; /* Assure que le lien prenne toute la largeur de la case */
+    border: 1px solid #ccc; /* Bordure autour de chaque case */
+    border-radius: 8px; /* Coins arrondis */
+    text-align: center; /* Centrer le texte */
+    padding: 10px; /* Espace à l'intérieur de chaque case */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
 }
 
-.full-column-link:hover {
-    background-color: #e0e0e0; /* Change la couleur de fond au survol si désiré */
-    color: #5da2e2; /* Change la couleur de texte au survol */
+.item:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+
+.container img {
+    max-width: 200px; /* Assurez-vous que l'image ne dépasse pas la largeur de la case */
+    max-height: 200px; /* Conserver les proportions de l'image */
+}
+
+.container p{
+    margin-top: 10px;
+    word-wrap: break-word; /* Pour forcer le retour à la ligne dans les mots longs */
+    overflow-wrap: break-word; /* Mieux pris en charge dans certains navigateurs modernes */
 }
