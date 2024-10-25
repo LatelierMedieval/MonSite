@@ -35,6 +35,59 @@
         </nav>
     </header>
 
+    <div class="sidebar", id="sidebar">
+        <div class="top">
+            <div class="name">
+                <p>L'Atelier Médiéval</p>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="dioramas_moyen_age.html">
+                    <i class="bx bx-images"></i>
+                    <span class="nav-item">Dioramas Moyen-Âge</span>
+                </a>
+            </li>
+            <li>
+                <a href="dioramas_antiquite.html">
+                    <i class="bx bx-images"></i>
+                    <span class="nav-item">Dioramas Antiquité</span>
+                </a>
+            </li>
+            <li>
+                <a href="figurines_moyen_age.html">
+                    <i class='bx bx-male'></i>
+                    <span class="nav-item">Figurines Moyen-Âge</span>
+                </a>
+            </li>
+            <li>
+                <a href="figurines_antiquite.html">
+                    <i class='bx bx-male'></i>
+                    <span class="nav-item">Figurines Antiquité</span>
+                </a>
+            </li>
+            <li>
+                <a href="santons.html">
+                    <i class='bx bx-male'></i>
+                    <span class="nav-item">Santons</span>
+                </a>
+            </li>
+            <li>
+                <a href="autres.html">
+                    <i class='bx bx-file'></i>
+                    <span class="nav-item">Autres</span>
+                </a>
+            </li>
+            <li>
+                <a href="Tutoriels.html">
+                    <i class="bx bx-share-alt"></i>
+                    <span class="nav-item">Tutoriels</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <section class="main-section">
         <div class="title">
             <h2>Autres</h2>
@@ -55,5 +108,14 @@
         <p>&copy; 2024 L'Atelier Médiéval. Tous droits réservés.</p>
     </footer>
 </body>
+
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function(){
+        sidebar.classList.toggle('active');
+    };
+</script>
 
 </html>
