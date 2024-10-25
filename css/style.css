@@ -180,3 +180,15 @@ footer {
     word-wrap: break-word; /* Pour forcer le retour à la ligne dans les mots longs */
     overflow-wrap: break-word; /* Mieux pris en charge dans certains navigateurs modernes */
 }
+
+.container_images {
+    display: flex;
+    gap: 20px; /* Espace entre les cases */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container_images img {
+    max-width: 20%; /* Assurez-vous que l'image ne dépasse pas la largeur de la case */
+    max-height: 200px; /* Conserver les proportions de l'image */
+}
