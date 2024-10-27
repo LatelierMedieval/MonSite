@@ -138,6 +138,35 @@ footer {
     margin-top: 80px;
 }
 
+.index {
+    margin-top: 150px;
+    display: flex; /* Utilise le flexbox pour une disposition côte à côte */
+}
+.gauche, .droite {
+    flex: 1; /* Chaque section prend la même largeur */
+    display: flex; /* Utilise le flexbox à l'intérieur des sections */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+.gauche{
+    margin-left: 60px;
+}
+
+.droite{
+    margin-right: 20px;
+}
+
+.gauche p {
+    text-align: center; /* Centre le texte dans la section gauche */
+    font-size: x-large;
+}
+
+.droite img {
+    max-width: 40%; /* Ajuste l'image pour qu'elle ne déborde pas */
+    height: auto; /* Conserve les proportions de l'image */
+}
+
 .title {
     text-align: center;
     font-size: 2em;
