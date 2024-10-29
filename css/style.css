@@ -210,17 +210,76 @@ footer {
     overflow-wrap: break-word; /* Mieux pris en charge dans certains navigateurs modernes */
 }
 
-.container_images {
+
+/* Style pour les affichages d'images */
+.parent_thumbnail {
     display: flex;
-    gap: 20px; /* Espace entre les cases */
-    justify-content: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;     /* Centre verticalement */
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.container_images img {
-    max-width: 20%; /* Assurez-vous que l'image ne dépasse pas la largeur de la case */
-    max-height: 200px; /* Conserver les proportions de l'image */
+.thumbnail {
+    display: inline-block;
+    margin: 0px;
 }
+
+.thumbnail-image {
+    max-width: 260px; /* Assurez-vous que l'image ne dépasse pas la largeur de la case */
+    max-height: 197px; /* Conserver les proportions de l'image */
+    object-fit: cover;
+}
+
+/* Style pour la lightbox */
+.lightbox {
+    display: none; /* Modifier pour cacher par défaut */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: calc(100% - 70px);
+    top: 80px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox {
+    display: none;
+    /* Le reste de tes styles pour la lightbox... */
+}
+
+.lightbox-content {
+    top: 1;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    color: white;
+    z-index: 901;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
 
 /* SIDEBAR */
 
