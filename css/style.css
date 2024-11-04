@@ -188,6 +188,7 @@ footer {
     text-decoration: none; /* Supprime le soulignement par défaut */
     color: inherit; /* Utilise la couleur de texte héritée pour le texte */
     overflow-wrap: break-word;
+    max-width: 250px;
 }
 
 .item {
