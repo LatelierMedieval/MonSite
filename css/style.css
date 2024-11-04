@@ -177,13 +177,17 @@ footer {
 .container {
     display: flex;
     gap: 20px; /* Espace entre les cases */
-    max-width: 200px;
     height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
 
 .container a {
     text-decoration: none; /* Supprime le soulignement par défaut */
     color: inherit; /* Utilise la couleur de texte héritée pour le texte */
+    overflow-wrap: break-word;
 }
 
 .item {
