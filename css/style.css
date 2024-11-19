@@ -288,6 +288,101 @@ footer {
     cursor: pointer;
 }
 
+/* Section du tutoriel */
+.tutorial-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+.tutorial-container {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* À gauche : Outils et matériel */
+.tools-material {
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tools-material h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.tools-material ul {
+    list-style: none;
+}
+
+.tools-material ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.tools-material ul li i {
+    margin-right: 10px;
+    color: #5da2e2;
+}
+
+/* À droite : Étapes du tutoriel */
+.tutorial-steps {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-steps h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+.step h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.step-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .tutorial-container {
+        flex-direction: column;
+    }
+
+    .tools-material, .tutorial-steps {
+        flex: 1;
+    }
+
+    .step-image {
+        max-width: 90%;
+    }
+}
 
 
 
