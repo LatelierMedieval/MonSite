@@ -1,12 +1,12 @@
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.9">
-        <title>L'Atelier Medieval</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="icon" type="image/png" sizes="16x16" href="../img/logo_trans.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>L'Atelier Medieval</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo_trans.png">
+</head>
 
 <body>
     <header>
@@ -90,42 +90,54 @@
 
     <section class="main-section">
         <div class="title">
-            <h3>Marché Médiéval</h3>
+            <h3>Marché médiéval</h3>
         </div>
 
-        <p>
-            Voir photos<br><br>
-        </p>
+        <div class="tutorial-section">
+            <div class="tutorial-container">
+                <!-- À gauche : Outils et Matériel -->
+                <div class="tools-material">
+                    <h3>Outils et Matériel</h3>
+                    <ul>
+                        <li><i class="bx bx-check-circle"></i> Balsa (bois léger et cassant)</li>
+                        <li><i class="bx bx-check-circle"></i> Cutter</li>
 
-        <div class="parent_thumbnail">
-            <a href="../img/Tutoriels/marche_1.jpg" class="thumbnail">
-                <img src="../img/Tutoriels/marche_1.jpg" alt="Image 1" class="thumbnail-image">
-            </a>
-            <a href="../img/Tutoriels/marche_2.jpg" class="thumbnail">
-                <img src="../img/Tutoriels/marche_2.jpg" alt="Image 1" class="thumbnail-image">
-            </a>
-        </div>
 
-        <div class="lightbox">
-            <span class="close">&times;</span>
-            <img src="" alt="Image en taille réelle" class="lightbox-content">
+                    </ul>
+                </div>
+
+                <!-- À droite : Étapes du tutoriel -->
+                <div class="tutorial-steps">
+                    <h3>Étapes du Tutoriel</h3>
+                    <div class="step">
+                        <h4>Étape 1 :</h4>
+                        <p></p>
+                        <img src="../img/Tutoriels/" alt="Étape 1.1" class="step-image">
+                    </div>
+                    <div class="step">
+                        <h4>Étape 2 : </h4>
+                        <p<br></p>
+                        <img src="../img/Tutoriels/" alt="Étape 2.1" class="step-image">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 L'Atelier Médiéval. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        let btn = document.querySelector('#btn')
+        let sidebar = document.querySelector('.sidebar')
+
+        btn.onclick = function(){
+            sidebar.classList.toggle('active');
+        };
+    </script>
+
+    <script src="../js/img.js"></script>
+
 </body>
-
-<script>
-    let btn = document.querySelector('#btn')
-    let sidebar = document.querySelector('.sidebar')
-
-    btn.onclick = function(){
-        sidebar.classList.toggle('active');
-    };
-</script>
-
-<script src="../js/img.js"></script>
-
 </html>
