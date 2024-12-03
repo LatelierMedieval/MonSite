@@ -176,8 +176,7 @@ footer {
 
 .description {
     font-size: 1em;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 25px;
     height: auto;
 }
 
@@ -222,6 +221,14 @@ footer {
     overflow-wrap: break-word; /* Mieux pris en charge dans certains navigateurs modernes */
 }
 
+.box{
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    padding-bottom: 25px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
 
 /* Style pour les affichages d'images */
 .parent_thumbnail {
@@ -252,7 +259,7 @@ footer {
     height: calc(100% - 70px);
     top: 80px;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     display: flex;
     align-items: center;
@@ -274,11 +281,12 @@ footer {
     color: white;
     z-index: 901;
     position: absolute;
-    top: 15px;
-    right: 35px;
-    font-size: 40px;
+    top: 50px;
+    right: 55px;
+    font-size: 70px;
     font-weight: bold;
     cursor: pointer;
+    padding: 20px;  /* Ajouté pour s'assurer que le fond soit assez grand */
 }
 
 .close:hover,
@@ -286,6 +294,26 @@ footer {
     color: #999;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Style pour les flèches gauche et droite */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 16px;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 50px;
+}
+
+.next {
+    right: 50px;
 }
 
 /* Section du tutoriel */
