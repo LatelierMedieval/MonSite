@@ -1,68 +1,78 @@
-// Récupérer tous les éléments avec la classe thumbnail
-var thumbnails = document.querySelectorAll('.thumbnail');
+// Sélection des éléments nécessaires
+const thumbnails = document.querySelectorAll('.thumbnail');
+const lightbox = document.querySelector('.lightbox');
+const lightboxImage = document.querySelector('.lightbox-content');
+const closeBtn = document.querySelector('.close');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+const body = document.body;
 
-// Ajouter un écouteur d'événement à chaque miniature
-thumbnails.forEach(function(thumbnail) {
-    thumbnail.addEventListener('click', function(event) {
-        event.preventDefault(); // Empêcher le lien de s'ouvrir
-        var imageUrl = this.getAttribute('href');
-        var lightboxContent = document.querySelector('.lightbox-content');
-        lightboxContent.setAttribute('src', imageUrl);
-        // Afficher la lightbox
-        document.querySelector('.lightbox').style.display = 'flex';
-        document.addEventListener('keydown', handleKeyPress);
-        currentImageIndex = Array.from(thumbnails).findIndex(thumbnail => thumbnail.getAttribute('href') === imageUrl);  // Mettre à jour l'index de l'image actuelle
+// Tableau des images
+let images = [];
+thumbnails.forEach(thumbnail => {
+    images.push(thumbnail.href);
+});
+
+// Index de l'image active
+let currentIndex = 0;
+
+// Fonction pour ouvrir la lightbox
+function openLightbox(index) {
+    currentIndex = index;
+    lightboxImage.src = images[currentIndex];
+    lightbox.style.display = 'block';
+    body.classList.add('lightbox-open'); // Ajoute la classe pour désactiver les événements du header
+}
+
+// Fonction pour fermer la lightbox
+function closeLightbox() {
+    lightbox.style.display = 'none';
+    body.classList.remove('lightbox-open'); // Retire la classe pour réactiver les événements du header
+}
+
+// Fonction pour afficher l'image précédente
+function showPrevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImage.src = images[currentIndex];
+}
+
+// Fonction pour afficher l'image suivante
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImage.src = images[currentIndex];
+}
+
+// Événements pour ouvrir la lightbox au clic sur une vignette
+thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', (e) => {
+        e.preventDefault();
+        openLightbox(index);
     });
 });
 
-// Récupérer l'élément avec la classe close
-var closeButton = document.querySelector('.close');
+// Événement pour fermer la lightbox
+closeBtn.addEventListener('click', closeLightbox);
 
-// Ajouter un écouteur d'événement au bouton de fermeture
-closeButton.addEventListener('click', function() {
-    // Masquer la lightbox
-    document.querySelector('.lightbox').style.display = 'none';
-    document.removeEventListener('keydown', handleKeyPress);
-});
+// Événements pour naviguer entre les images
+prevBtn.addEventListener('click', showPrevImage);
+nextBtn.addEventListener('click', showNextImage);
 
-// Ajouter un écouteur d'événement pour les flèches gauche et droite
-var prevButton = document.querySelector('.prev');
-var nextButton = document.querySelector('.next');
-
-// Fonction pour afficher l'image précédente
-prevButton.addEventListener('click', function() {
-    if (currentImageIndex > 0) {
-        thumbnails[currentImageIndex - 1].click();
+// Fermer la lightbox en cliquant à l'extérieur de l'image
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        closeLightbox();
     }
 });
 
-// Fonction pour afficher l'image suivante
-nextButton.addEventListener('click', function() {
-    if (currentImageIndex < thumbnails.length - 1) {
-        thumbnails[currentImageIndex + 1].click();
+// Gestion de la navigation au clavier
+document.addEventListener('keydown', (e) => {
+    if (lightbox.style.display === 'block') {
+        if (e.key === 'ArrowLeft') {
+            showPrevImage();
+        } else if (e.key === 'ArrowRight') {
+            showNextImage();
+        } else if (e.key === 'Escape') {
+            closeLightbox();
+        }
     }
 });
-
-// Gérer les événements clavier pour le défilement des images
-function handleKeyPress(event) {
-    var lightboxContent = document.querySelector('.lightbox-content');
-    var currentImageIndex = Array.from(thumbnails).findIndex(thumbnail => thumbnail.getAttribute('href') === lightboxContent.getAttribute('src'));
-
-    switch (event.key) {
-        case 'ArrowLeft':
-            if (currentImageIndex > 0) {
-                thumbnails[currentImageIndex - 1].click();
-            }
-            break;
-        case 'ArrowRight':
-            if (currentImageIndex < thumbnails.length - 1) {
-                thumbnails[currentImageIndex + 1].click();
-            }
-            break;
-        case 'Escape':
-            closeButton.click();
-            break;
-        default:
-            break;
-    }
-}
