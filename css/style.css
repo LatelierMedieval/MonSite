@@ -274,9 +274,8 @@ footer {
     justify-content: center;
 }
 
-.lightbox {
+.lightbox{
     display: none;
-    /* Le reste de tes styles pour la lightbox... */
 }
 
 .lightbox-content {
@@ -585,6 +584,9 @@ footer {
         font-size:medium;
     }
 
+    .thumbnail{
+        pointer-events: none;
+    }
 }
 
 
