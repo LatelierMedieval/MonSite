@@ -148,8 +148,6 @@ footer {
 }
 
 .index {
-    top: 50%;
-    transform: translateY(50%);
     display: flex; /* Utilise le flexbox pour une disposition côte à côte */
 }
 .gauche, .droite {
