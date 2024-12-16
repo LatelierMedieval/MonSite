@@ -565,6 +565,25 @@ footer {
         color: white;
     }
 
+    .index{
+        margin: auto;
+        flex-direction:column-reverse ;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .gauche{
+        margin: auto;
+    }
+
+    .droite{
+        margin-bottom: 20px;
+    }
+
+    .gauche p {
+        font-size:medium;
+    }
+
 }
 
 
@@ -590,7 +609,6 @@ footer {
         flex-direction: column;
         width: 100%;
     }
-
 
     .img a img{
         width: 80%;
@@ -621,13 +639,12 @@ footer {
         transform: translate(0);
         color: white;
     }
+}
 
-
-    @media screen and (min-width: 1024px) and (max-width: 1280px){
-        footer{
-            height: 380px;
-            width: 100%;
-        }
-        
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    footer{
+        height: 380px;
+        width: 100%;
     }
+    
 }
