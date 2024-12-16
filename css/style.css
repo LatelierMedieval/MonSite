@@ -662,4 +662,8 @@ footer {
         flex: 1;
     }
 
+    .thumbnail{
+        pointer-events: none;
+    }
+
 }
