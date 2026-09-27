@@ -87,8 +87,34 @@ if (page === 'project-detail') {
     byId('project-cover').src = p.cover; byId('project-cover').alt = p.title;
     put('project-tag', `${p.category} · ${p.year}`); put('project-title', p.title); put('project-description', p.details);
     p.meta.forEach(item => { const el = clone('meta-template'); el.textContent = item; byId('project-meta').append(el); });
-    gallery = p.images; galleryTitle = p.title;
-    p.images.forEach((src, index) => { const el = clone('gallery-template'); const img = el.querySelector('img'); img.src = src; img.alt = `${p.title} — vue ${index + 1}`; el.addEventListener('click', () => { galleryIndex = index; updateLightbox(); lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); }); byId('project-gallery').append(el); });
+    const sections = p.gallerySections || [{ title: null, imageNumbers: p.images.map((_, index) => index + 1) }];
+    gallery = sections.flatMap(section => section.imageNumbers.map(number => p.images[number - 1]));
+    galleryTitle = p.title;
+    let galleryPosition = 0;
+    sections.forEach(section => {
+      const container = section.title ? document.createElement('section') : byId('project-gallery');
+      if (section.title) {
+        container.className = 'gallery-section';
+        const heading = document.createElement('h3');
+        heading.className = 'gallery-section-title';
+        heading.textContent = section.title;
+        container.append(heading);
+      }
+      const grid = section.title ? document.createElement('div') : container;
+      if (section.title) grid.className = 'gallery';
+      section.imageNumbers.forEach(number => {
+        const src = p.images[number - 1];
+        if (!src) return;
+        const index = galleryPosition++;
+        const el = clone('gallery-template');
+        const img = el.querySelector('img');
+        img.src = src;
+        img.alt = `${p.title} — vue ${number}`;
+        el.addEventListener('click', () => { galleryIndex = index; updateLightbox(); lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); });
+        grid.append(el);
+      });
+      if (section.title) { container.append(grid); byId('project-gallery').append(container); }
+    });
   }
 }
 if (page === 'tutorial-detail') {
