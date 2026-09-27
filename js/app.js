@@ -23,37 +23,20 @@ function tutorialCard(t) {
 }
 function appendCards(target, items, render) { byId(target).replaceChildren(...items.map(render)); }
 
-const pages = window.PORTFOLIO_PAGES;
 let gallery = [], galleryIndex = 0, galleryTitle = '';
 const lb = byId('lightbox');
 function updateLightbox() { byId('lightboxImage').src = gallery[galleryIndex]; byId('lightboxImage').alt = galleryTitle; put('lightboxCaption', `${galleryTitle} — ${galleryIndex + 1} / ${gallery.length}`); }
 function closeLightbox() { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); }
-function updateActiveLink(page) {
-  const target = { home: 'index.html', projects: 'projets.html', 'project-detail': 'projets.html', tutorials: 'instructions.html', 'tutorial-detail': 'instructions.html', about: 'about.html' }[page];
-  document.querySelectorAll('.nav-main .nav-link').forEach(link => {
-    const active = link.getAttribute('href') === target;
-    link.classList.toggle('active', active);
-    if (active) link.setAttribute('aria-current', 'page');
-    else link.removeAttribute('aria-current');
-  });
-}
 function currentRoute() {
   return { filename: location.pathname.split('/').pop() || 'index.html', search: location.search };
 }
 function renderPage() {
-  const { filename, search } = currentRoute();
-  const entry = pages[filename];
-  if (!entry) return;
-  const page = entry.page;
+  const { search } = currentRoute();
+  const page = document.body.dataset.page;
   const params = new URLSearchParams(search);
-  document.body.dataset.page = page;
-  document.title = entry.title;
-  updateActiveLink(page);
   gallery = []; galleryIndex = 0; galleryTitle = '';
   closeLightbox();
-  byId('app').innerHTML = entry.html;
   if (page === 'home') {
-  put('artist-name', data.artist.name); put('artist-intro', data.artist.intro);
   put('project-count', data.projects.length); put('tutorial-count', data.tutorials.length);
   appendCards('featured-projects', data.projects.filter(p => p.featured).slice(0, 3), projectCard);
   appendCards('recent-tutorials', data.tutorials, tutorialCard);
@@ -75,7 +58,6 @@ if (page === 'projects') {
   filter(selected);
 }
 if (page === 'tutorials') appendCards('tutorials-list', data.tutorials, tutorialCard);
-if (page === 'about') { put('artist-tagline', data.artist.tagline); put('artist-about', data.artist.about); }
 
 if (page === 'project-detail') {
   const p = data.projects.find(x => x.id === params.get('id'));
