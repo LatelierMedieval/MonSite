@@ -181,7 +181,7 @@ window.PORTFOLIO_DATA = {
       category: "Maquettes Antiquité",
       year: "2026",
       featured: false,
-      cover: "images/projects/project-diorama-antiquite-1.1.webp",
+      cover: "images/projects/project-diorama-antiquite-1.34.webp",
       images: [
         "images/projects/project-diorama-antiquite-1.1.webp",
         "images/projects/project-diorama-antiquite-1.2.webp",
@@ -227,6 +227,12 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-antiquite-1.42.webp",
         "images/projects/project-diorama-antiquite-1.43.webp",
         "images/projects/project-diorama-antiquite-1.44.webp",
+      ],
+      gallerySections: [
+        { title: "Enceinte de la ville de Ravenne au VIIe siècle", imageNumbers: [34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44] },
+        { title: "Disposition sans les figurines", imageNumbers: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,] },
+        { title: "Deuxième jet, avec les étals de marchands et divers accessoires", imageNumbers: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22] },
+        { title: "Premier jet", imageNumbers: [1, 2, 3, 4, 5, 6, 7, 8] },
       ],
       summary: "Décor de la ville de Ravenne au VIIe siècle, avec son marché pensé pour accueillir plusieurs figurines.",
       details: "Décor de la ville de Ravenne au VIIe siècle, avec son marché pensé pour accueillir plusieurs figurines.",
