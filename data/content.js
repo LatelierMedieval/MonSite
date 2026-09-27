@@ -118,7 +118,7 @@ window.PORTFOLIO_DATA = {
       category: "Maquettes médiévales",
       year: "2025",
       featured: false,
-      cover: "images/projects/project-diorama-medieval-4.1.webp",
+      cover: "images/projects/project-diorama-medieval-4-cover.webp",
       images: [
         "images/projects/project-diorama-medieval-4.1.webp",
         "images/projects/project-diorama-medieval-4.2.webp",
@@ -147,7 +147,7 @@ window.PORTFOLIO_DATA = {
       category: "Maquettes médiévales",
       year: "2025",
       featured: false,
-      cover: "images/projects/project-diorama-medieval-5.1.webp",
+      cover: "images/projects/project-diorama-medieval-5-cover.webp",
       images: [
         "images/projects/project-diorama-medieval-5.1.webp",
         "images/projects/project-diorama-medieval-5.2.webp",
@@ -568,7 +568,7 @@ window.PORTFOLIO_DATA = {
       category: "Autres",
       year: "2026",
       featured: false,
-      cover: "images/projects/project-other-1.1.webp",
+      cover: "images/projects/project-other-1-cover.webp",
       images: [
         "images/projects/project-other-1.1.webp",
         "images/projects/project-other-1.2.webp",
