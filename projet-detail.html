@@ -22,7 +22,42 @@
 
       <script src="js/header.js"></script>
 
-      <div id="app" class="page-wrap"><div class="detail"><a class="back-btn" id="back-projects" href="projets.html"></a><div class="detail-hero"><img id="project-cover" alt=""><div class="detail-copy"><span class="tag" id="project-tag"></span><h1 class="detail-title" id="project-title"></h1><p id="project-description"></p><div class="meta-row" id="project-meta"></div></div></div><div class="section-head section-head--gallery"><div><span class="eyebrow">Galerie</span><h2 class="section-title">Détails du projet</h2></div></div><div class="gallery" id="project-gallery"></div></div><template id="meta-template"><span class="meta"></span></template><template id="gallery-template"><button type="button"><img alt="" loading="lazy"></button></template></div>
+      <div id="app" class="page-wrap">
+        <div class="detail">
+          <a class="back-btn" id="back-projects" href="projets.html">← Retour aux projets</a>
+          <div class="detail-hero">
+            <img id="project-cover" alt="">
+            <div class="detail-copy">
+              <span class="tag" id="project-tag">
+              </span>
+              <h1 class="detail-title" id="project-title">
+              </h1>
+              <p id="project-description">
+              </p>
+              <div class="meta-row" id="project-meta">
+              </div>
+            </div>
+          </div>
+          <div class="section-head section-head--gallery">
+            <div>
+              <span class="eyebrow">Galerie</span>
+              <h2 class="section-title">Détails du projet</h2>
+            </div>
+          </div>
+          <div class="gallery" id="project-gallery">
+          </div>
+        </div>
+        <template id="meta-template">
+          <span class="meta">
+          </span>
+        </template>
+        <template id="gallery-template">
+          <button type="button">
+            <img alt="" loading="lazy">
+          </button>
+        </template>
+      </div>
+
 
       <script src="js/footer.js"></script>
 
@@ -31,16 +66,15 @@
   </div>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer"></button>
-    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Précédent"></button>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">×</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Précédent">‹</button>
     <figure><img id="lightboxImage" alt="">
       <figcaption id="lightboxCaption"></figcaption>
     </figure>
-    <button class="lightbox-nav next" id="lightboxNext" aria-label="Suivant"></button>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Suivant">›</button>
   </div>
 
   <script src="data/content.js"></script>
-  <script src="js/pages.js"></script>
   <script src="js/app.js"></script>
 
 </body>

@@ -24,52 +24,96 @@
 
       <div id="app" class="page-wrap">
         <section class="hero">
-          <div class="hero-copy"><span class="eyebrow"></span>
-            <h1 id="artist-name"></h1>
-            <p id="artist-intro"></p>
-            <div class="hero-actions"><a class="btn btn-primary" href="projets.html"></a><a class="btn btn-secondary"
-                href="instructions.html"></a></div>
+          <div class="hero-copy">
+            <span class="eyebrow">Portfolio indépendant · modélisme</span>
+            <h1>L'Atelier Médiéval</h1>
+            <p>Passionné de modélisme et de maquettisme, je crée des figurines historiques et des dioramas inspirés du
+              Moyen Âge et de l’Antiquité ainsi que des décors de crèche. Découvrez mes réalisations, mes univers
+              miniatures et mes tutoriels de fabrication.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="projets.html">Voir les projets</a>
+              <a class="btn btn-secondary" href="instructions.html">Explorer les tutoriels</a>
+            </div>
           </div>
-          <div class="hero-art"><img src="images/projects/project-diorama-medieval-2.1.webp"
-              alt="Maquette du château médiéval réalisée par l’atelier" fetchpriority="high"></div>
+          <div class="hero-art">
+            <img src="images/projects/project-diorama-medieval-2.1.webp"
+              alt="Maquette du château médiéval réalisée par l’atelier" fetchpriority="high">
+          </div>
         </section>
         <div class="stats">
-          <div class="stat"><strong></strong><span></span></div>
-          <div class="stat"><strong></strong><span></span></div>
-          <div class="stat"><strong id="project-count"></strong><span></span></div>
-          <div class="stat"><strong id="tutorial-count"></strong><span></span></div>
+          <div class="stat">
+            <strong>1/32 · 1/35 · 1/72</strong>
+            <span>Échelles des figurines</span>
+          </div>
+          <div class="stat">
+            <strong>7 cm</strong>
+            <span>Taille des santons</span>
+          </div>
+          <div class="stat">
+            <strong id="project-count">
+            </strong>
+            <span>Projets</span>
+          </div>
+          <div class="stat">
+            <strong id="tutorial-count">
+            </strong>
+            <span>Tutoriels</span>
+          </div>
         </div>
         <section>
           <div class="section-head">
-            <div><span class="eyebrow"></span>
-              <h2 class="section-title"></h2>
-              <p></p>
-            </div><a class="link-button" href="projets.html"></a>
+            <div>
+              <span class="eyebrow">Sélection</span>
+              <h2 class="section-title">Exemple de projets</h2>
+              <p>Une selection de projets pour rentrer dans mon univers</p>
+            </div>
+            <a class="link-button" href="projets.html">Tout voir →</a>
           </div>
-          <div class="project-grid" id="featured-projects"></div>
+          <div class="project-grid" id="featured-projects">
+          </div>
         </section>
         <section>
           <div class="section-head section-head--tutorials">
-            <div><span class="eyebrow"></span>
-              <h2 class="section-title"></h2>
-              <p></p>
-            </div><a class="link-button" href="instructions.html"></a>
+            <div>
+              <span class="eyebrow">Partager</span>
+              <h2 class="section-title">Tutoriels récents</h2>
+              <p>Matériel, méthode et étapes illustrées, du premier trait aux finitions.</p>
+            </div>
+            <a class="link-button" href="instructions.html">Tous les tutoriels →</a>
           </div>
-          <div class="tutorial-strip" id="recent-tutorials"></div>
-        </section><template id="project-card-template"><a class="project-card" href="projet-detail.html">
-            <div class="project-image"><img alt="" loading="lazy"></div>
-            <div class="project-body"><span class="tag"></span>
-              <h3></h3>
-              <p></p>
+          <div class="tutorial-strip" id="recent-tutorials">
+          </div>
+        </section>
+        <template id="project-card-template">
+          <a class="project-card" href="projet-detail.html">
+            <div class="project-image">
+              <img alt="" loading="lazy">
             </div>
-          </a></template><template id="tutorial-card-template"><a class="tutorial-card"
-            href="instruction-detail.html"><img alt="" loading="lazy">
-            <div class="inside"><span class="tag"></span>
-              <h3></h3>
-              <p></p>
+            <div class="project-body">
+              <span class="tag">
+              </span>
+              <h3>
+              </h3>
+              <p>
+              </p>
             </div>
-          </a></template>
+          </a>
+        </template>
+        <template id="tutorial-card-template">
+          <a class="tutorial-card" href="instruction-detail.html">
+            <img alt="" loading="lazy">
+            <div class="inside">
+              <span class="tag">
+              </span>
+              <h3>
+              </h3>
+              <p>
+              </p>
+            </div>
+          </a>
+        </template>
       </div>
+
 
       <script src="js/footer.js"></script>
 
@@ -78,16 +122,15 @@
   </div>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer"></button>
-    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Précédent"></button>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">×</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Précédent">‹</button>
     <figure><img id="lightboxImage" alt="">
       <figcaption id="lightboxCaption"></figcaption>
     </figure>
-    <button class="lightbox-nav next" id="lightboxNext" aria-label="Suivant"></button>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Suivant">›</button>
   </div>
 
   <script src="data/content.js"></script>
-  <script src="js/pages.js"></script>
   <script src="js/app.js"></script>
 
 </body>
