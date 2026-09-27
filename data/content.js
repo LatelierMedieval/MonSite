@@ -18,13 +18,34 @@ window.PORTFOLIO_DATA = {
   ],
 
   projects: [
+    {/*La cathédrale*/
+      id: "project-diorama-medieval-7",
+      title: "La Cathédrale",
+      category: "Maquettes médiévales",
+      year: "2026",
+      featured: true,
+      cover: "images/projects/project-diorama-medieval-7-cover.webp",
+      images: [
+        "images/projects/project-diorama-medieval-7.1.webp",
+        "images/projects/project-diorama-medieval-7.2.webp",
+        "images/projects/project-diorama-medieval-7.3.webp",
+        "images/projects/project-diorama-medieval-7.4.webp",
+
+      ],
+      summary: "Diorama d'une cathédrale en construction avec son chantier, ses ouvriers et ses échafaudages.",
+      details: "Diorama d'une cathédrale en construction avec son chantier, ses ouvriers et ses échafaudages.",
+      meta: [
+        "Échelle 1:35",
+        "Polystyrène · balsa",
+      ]
+    },
     {/*Le château*/
       id: "project-diorama-medieval-1",
       title: "Le Château",
       category: "Maquettes médiévales",
       year: "2026",
       featured: false,
-      cover: "images/projects/project-diorama-medieval-1.1.webp",
+      cover: "images/projects/project-diorama-medieval-1-cover.webp",
       images: [
         "images/projects/project-diorama-medieval-1.1.webp",
         "images/projects/project-diorama-medieval-1.2.webp",
@@ -46,7 +67,7 @@ window.PORTFOLIO_DATA = {
       title: "Le village",
       category: "Maquettes médiévales",
       year: "2026",
-      featured: true,
+      featured: false,
       cover: "images/projects/project-diorama-medieval-2.1.webp",
       images: [
         "images/projects/project-diorama-medieval-2.1.webp",
@@ -152,7 +173,7 @@ window.PORTFOLIO_DATA = {
       category: "Maquettes médiévales",
       year: "2026",
       featured: true,
-      cover: "images/projects/project-diorama-medieval-6.1.webp",
+      cover: "images/projects/project-diorama-medieval-6-cover.webp",
       images: [
         "images/projects/project-diorama-medieval-6.1.webp",
         "images/projects/project-diorama-medieval-6.2.webp",
@@ -378,7 +399,7 @@ window.PORTFOLIO_DATA = {
       category: "Décors de crèche",
       year: "2026",
       featured: true,
-      cover: "images/projects/project-diorama-creche-2.1.webp",
+      cover: "images/projects/project-diorama-creche-2-cover.webp",
       images: [
         "images/projects/project-diorama-creche-2.1.webp",
         "images/projects/project-diorama-creche-2.2.webp",
