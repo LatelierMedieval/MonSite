@@ -419,7 +419,7 @@ window.PORTFOLIO_DATA = {
       category: "Décors de crèche",
       year: "2026",
       featured: false,
-      cover: "images/projects/project-diorama-creche-3.1.webp",
+      cover: "images/projects/project-diorama-creche-3-cover.webp",
       images: [
         "images/projects/project-diorama-creche-3.1.webp",
         "images/projects/project-diorama-creche-3.2.webp",
@@ -437,7 +437,7 @@ window.PORTFOLIO_DATA = {
       category: "Décors de crèche",
       year: "2026",
       featured: false,
-      cover: "images/projects/project-diorama-creche-4.1.webp",
+      cover: "images/projects/project-diorama-creche-4-cover.webp",
       images: [
         "images/projects/project-diorama-creche-4.1.webp",
         "images/projects/project-diorama-creche-4.2.webp",
@@ -459,7 +459,7 @@ window.PORTFOLIO_DATA = {
       category: "Décors de crèche",
       year: "2026",
       featured: false,
-      cover: "images/projects/project-diorama-creche-5.1.webp",
+      cover: "images/projects/project-diorama-creche-5-cover.webp",
       images: [
         "images/projects/project-diorama-creche-5.1.webp",
         "images/projects/project-diorama-creche-5.2.webp",
@@ -478,7 +478,7 @@ window.PORTFOLIO_DATA = {
       category: "Décors de crèche",
       year: "2026",
       featured: false,
-      cover: "images/projects/project-diorama-creche-6.1.webp",
+      cover: "images/projects/project-diorama-creche-6-cover.webp",
       images: [
         "images/projects/project-diorama-creche-6.1.webp",
         "images/projects/project-diorama-creche-6.2.webp",
@@ -495,7 +495,7 @@ window.PORTFOLIO_DATA = {
       category: "Décors de crèche",
       year: "2026",
       featured: false,
-      cover: "images/projects/project-diorama-creche-7.1.webp",
+      cover: "images/projects/project-diorama-creche-7-cover.webp",
       images: [
         "images/projects/project-diorama-creche-7.1.webp",
         "images/projects/project-diorama-creche-7.2.webp",
@@ -513,7 +513,7 @@ window.PORTFOLIO_DATA = {
       category: "Décors de crèche",
       year: "2026",
       featured: false,
-      cover: "images/projects/project-diorama-creche-8.1.webp",
+      cover: "images/projects/project-diorama-creche-8-cover.webp",
       images: [
         "images/projects/project-diorama-creche-8.1.webp",
         "images/projects/project-diorama-creche-8.2.webp",
