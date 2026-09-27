@@ -944,15 +944,54 @@ body.dark .filter-btn {
     object-fit: cover;
     border-radius: 14px
 }
+
 /* Styles des éléments auparavant définis dans le balisage. */
-.brand-mark img { object-fit: contain; }
-.section-head--tutorials { margin-top: 72px; }
-.section-head--gallery { margin-top: 42px; }
-.tutorial-strip--page { margin-top: 22px; }
-.about-text { color: var(--muted); line-height: 1.8; }
+.brand-mark img {
+    object-fit: contain;
+}
+
+.section-head--tutorials {
+    margin-top: 72px;
+}
+
+.section-head--gallery {
+    margin-top: 42px;
+}
+
+.tutorial-strip--page {
+    margin-top: 22px;
+}
+
+.about-text {
+    color: var(--muted);
+    line-height: 1.8;
+}
 
 /* Les vues sont maintenant de vraies pages reliées par des liens. */
-.nav-link, .category-link, .project-card, .tutorial-card, .back-btn, .link-button, .btn { text-decoration: none; }
-.project-card { display: block; color: inherit; }
-.tutorial-card { display: block; }
-.back-btn, .link-button { display: inline-block; }
+.nav-link,
+.category-link,
+.project-card,
+.tutorial-card,
+.back-btn,
+.link-button,
+.btn {
+    text-decoration: none;
+}
+
+.project-card {
+    display: block;
+    color: inherit;
+}
+
+.tutorial-card {
+    display: block;
+}
+
+.back-btn,
+.link-button {
+    display: inline-block;
+}
+/* Regroupements des photographies sur les pages projet */
+#project-gallery:has(.gallery-section) { display: block; }
+.gallery-section + .gallery-section { margin-top: 2.5rem; }
+.gallery-section-title { margin: 0 0 1rem; font-size: clamp(1.2rem, 2.5vw, 1.7rem); line-height: 1.25; }
