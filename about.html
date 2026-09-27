@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio de modélisme : maquettes, figurines, santons et tutoriels." />
+  <title>L'Atelier Médiéval — Portfolio de modélisme</title>
+  <link rel="icon" href="images/logo_v7_trans.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="about">
+  <div class="app-shell">
+
+    <script src="js/sidebar.js"></script>
+
+    <main class="main-content">
+
+      <script src="js/header.js"></script>
+
+      <div id="app" class="page-wrap">
+        <section class="page-hero"><span class="eyebrow"></span>
+          <h1>À propos</h1>
+          <p id="artist-tagline"></p>
+        </section>
+        <div class="about-card">
+          <div>
+            <h2 class="section-title">Une pratique entre histoire et matière.</h2>
+            <p class="about-text" id="artist-about"></p>
+            <p class="about-text">Le site est volontairement pensé comme un portfolio et un carnet de transmission :
+              aucune boutique, aucun panier, seulement les œuvres et les méthodes.</p>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/footer.js"></script>
+
+    </main>
+
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">×</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Précédent">‹</button>
+    <figure><img id="lightboxImage" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Suivant">›</button>
+  </div>
+
+  <script src="data/content.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

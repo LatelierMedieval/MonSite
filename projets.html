@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio de modélisme : maquettes, figurines, santons et tutoriels." />
+  <title>L'Atelier Médiéval — Portfolio de modélisme</title>
+  <link rel="icon" href="images/logo_v7_trans.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="projects">
+  <div class="app-shell">
+
+    <script src="js/sidebar.js"></script>
+
+    <main class="main-content">
+
+      <script src="js/header.js"></script>
+
+      <div id="app" class="page-wrap"><section class="page-hero"><span class="eyebrow">Galerie</span><h1>Projets et œuvres</h1><p>Maquettes historiques, figurines et décors de crèche. Chaque projet dispose de sa propre galerie d’images et de quelques informations de fabrication.</p></section><div class="filters" id="filters"></div><div class="project-grid" id="projects-list"></div><template id="filter-template"><button class="filter-btn" type="button"></button></template><template id="project-card-template"><a class="project-card" href="projet-detail.html"><div class="project-image"><img alt="" loading="lazy"></div><div class="project-body"><span class="tag"></span><h3></h3><p></p></div></a></template></div>
+
+      <script src="js/footer.js"></script>
+
+    </main>
+
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">×</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Précédent">‹</button>
+    <figure><img id="lightboxImage" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Suivant">›</button>
+  </div>
+
+  <script src="data/content.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
