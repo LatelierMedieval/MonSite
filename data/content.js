@@ -558,7 +558,7 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-other-1.7.webp",
       ],
       summary: "Maquette de la ville de Maubeuge au VIIe siècle",
-      details: "Maquette de la ville de Maubeuge au VIIe siècle, exposée en permanence à l'église Saint Pierre et Paul de Maubeuge",
+      details: "Maquette de la ville de Maubeuge au VIIe siècle, exposée en permanence à l'église Saint Pierre et Paul de Maubeuge (59600, France)",
       meta: [
         "Echelle 1:72",
       ]
