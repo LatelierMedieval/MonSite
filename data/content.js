@@ -30,7 +30,7 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-medieval-7.2.webp",
         "images/projects/project-diorama-medieval-7.3.webp",
         "images/projects/project-diorama-medieval-7.4.webp",
-
+        "images/projects/project-diorama-medieval-7.5.webp",
       ],
       summary: "Diorama d'une cathédrale en construction avec son chantier, ses ouvriers et ses échafaudages.",
       details: "Diorama d'une cathédrale en construction avec son chantier, ses ouvriers et ses échafaudages.",
