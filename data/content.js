@@ -20,7 +20,7 @@ window.PORTFOLIO_DATA = {
   projects: [
     {/*La cathédrale*/
       id: "project-diorama-medieval-7",
-      title: "La Cathédrale",
+      title: "La Cathédrale en construction",
       category: "Maquettes médiévales",
       year: "2026",
       featured: true,
@@ -33,7 +33,7 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-medieval-7.5.webp",
       ],
       summary: "Diorama d'une cathédrale en construction avec son chantier, ses ouvriers et ses échafaudages.",
-      details: "Diorama d'une cathédrale en construction avec son chantier, ses ouvriers et ses échafaudages.",
+      details: "Hommage aux bâtisseurs méconnus du Moyen-Âge (terrassiers, maîtres d'oeuvre, maîtres-maçons, tailleurs de pierre, forgerons, maîtres charpentiers couvreurs, verriers-plombiers et tous ses ??",
       meta: [
         "Échelle 1:35",
         "Polystyrène · balsa",
@@ -579,7 +579,7 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-other-1.7.webp",
       ],
       summary: "Maquette de la ville de Maubeuge au VIIe siècle",
-      details: "Maquette de la ville de Maubeuge au VIIe siècle, exposée en permanence à l'église Saint Pierre et Paul de Maubeuge (59600, France)",
+      details: "Maquette de la naissance de la ville de Maubeuge au VIIe siècle, à partir du cloître fondé par Aldegonde (qui deviendra Sainte Aldegonde, patronne de la ville.) Maquette exposée en permanence à l'église Saint Pierre et Paul de Maubeuge (59600, France)",
       meta: [
         "Echelle 1:72",
       ]
