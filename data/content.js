@@ -31,9 +31,11 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-medieval-7.3.webp",
         "images/projects/project-diorama-medieval-7.4.webp",
         "images/projects/project-diorama-medieval-7.5.webp",
+        "images/projects/project-diorama-medieval-7.6.webp",
+
       ],
       summary: "Diorama d'une cathédrale en construction avec son chantier, ses ouvriers et ses échafaudages.",
-      details: "Hommage aux bâtisseurs méconnus du Moyen-Âge (terrassiers, maîtres d'oeuvre, maîtres-maçons, tailleurs de pierre, forgerons, maîtres charpentiers couvreurs, verriers-plombiers et tous ses ??",
+      details: "Hommage aux bâtisseurs méconnus du Moyen-Âge (terrassiers, maîtres d'oeuvre, maîtres-maçons, tailleurs de pierre, forgerons, maîtres charpentiers couvreurs, verriers-plombiers et tous ses oeuvriers",
       meta: [
         "Échelle 1:35",
         "Polystyrène · balsa",
@@ -107,7 +109,7 @@ window.PORTFOLIO_DATA = {
       summary: "Château en cours de construction, avec donjon, chapelle, cour intérieure et remparts.",
       details: "Château en cours de construction, avec donjon, chapelle, cour intérieure et remparts.",
       meta: [
-        "1/35",
+        "1:35",
         "Polystyrène · Balsa · Plâtre",
         "En cours de construction"
       ]
@@ -258,7 +260,7 @@ window.PORTFOLIO_DATA = {
       summary: "Décor de la ville de Ravenne au VIIe siècle, avec son marché pensé pour accueillir plusieurs figurines.",
       details: "Décor de la ville de Ravenne au VIIe siècle, avec son marché pensé pour accueillir plusieurs figurines.",
       meta: [
-        "Échelle 1:32",
+        "Échelle 1:35",
         "Polystyrène · balsa",
       ]
     },
@@ -283,6 +285,7 @@ window.PORTFOLIO_DATA = {
       summary: "",
       details: "",
       meta: [
+        "Échelle 1:35",
       ]
     },
     {/*Barbares*/
@@ -302,6 +305,7 @@ window.PORTFOLIO_DATA = {
       summary: "",
       details: "",
       meta: [
+        "Échelle 1:35",
       ]
     },
     {/*Jules césar*/
@@ -319,6 +323,7 @@ window.PORTFOLIO_DATA = {
       summary: "",
       details: "",
       meta: [
+        "Échelle 1:35",
       ]
     },
     {/*Figurines Ravenne*/
@@ -339,6 +344,7 @@ window.PORTFOLIO_DATA = {
       summary: "",
       details: "",
       meta: [
+        "Échelle 1:35",
       ]
     },
     {/*Crèche*/
@@ -391,6 +397,7 @@ window.PORTFOLIO_DATA = {
       summary: "",
       details: "",
       meta: [
+        "Taille 7cm",
       ]
     },
     {/*Huilerie*/
