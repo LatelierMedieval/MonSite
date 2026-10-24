@@ -45,7 +45,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-medieval-1",
       title: "Le Château",
       category: "Maquettes médiévales",
-      year: "2026",
+      year: "2016",
       featured: false,
       cover: "images/projects/project-diorama-medieval-1-cover.webp",
       images: [
@@ -57,8 +57,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-medieval-1.7.webp",
         "images/projects/project-diorama-medieval-1.8.webp",
       ],
-      summary: "Un immense château médiéval en pierre avec intérieurs détaillés.",
-      details: "Un immense château médiéval en pierre avec intérieurs détaillés.",
+      summary: "Maquette d'un château du Xe siècle de l'époque de Guillame de conquérant inspiré du château de Falaise.",
+      details: "Maquette d'un château du Xe siècle de l'époque de Guillame de conquérant inspiré du château de Falaise.",
       meta: [
         "Échelle 1:35",
         "Polystyrène · balsa",
@@ -68,7 +68,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-medieval-2.",
       title: "Le village",
       category: "Maquettes médiévales",
-      year: "2026",
+      year: "2010",
       featured: false,
       cover: "images/projects/project-diorama-medieval-2.1.webp",
       images: [
@@ -93,7 +93,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-medieval-3",
       title: "Château-Castelrock",
       category: "Maquettes médiévales",
-      year: "2025",
+      year: "2020",
       featured: false,
       cover: "images/projects/project-diorama-medieval-3.1.webp",
       images: [
@@ -106,8 +106,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-medieval-3.7.webp",
         "images/projects/project-diorama-medieval-3.8.webp",
       ],
-      summary: "Château en cours de construction, avec donjon, chapelle, cour intérieure et remparts.",
-      details: "Château en cours de construction, avec donjon, chapelle, cour intérieure et remparts.",
+      summary: "Château du haut Moyen-Âge inspiré du château Gaillard de Richard Coeur de Lion.",
+      details: "Château du haut Moyen-Âge inspiré du château Gaillard de Richard Coeur de Lion.",
       meta: [
         "1:35",
         "Polystyrène · Balsa · Plâtre",
@@ -118,7 +118,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-medieval-4",
       title: "Visite au château",
       category: "Maquettes médiévales",
-      year: "2025",
+      year: "2016",
       featured: false,
       cover: "images/projects/project-diorama-medieval-4-cover.webp",
       images: [
@@ -136,8 +136,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-medieval-4.12.webp",
         "images/projects/project-diorama-medieval-4.13.webp",
       ],
-      summary: "Scène intérieure d'un château médiéval avec banquet et personnages.",
-      details: "Scène intérieure d'un château médiéval avec banquet et personnages.",
+      summary: "Visite de Seigneurs au Roi Philippe Auguste.",
+      details: "Visite de Seigneurs au Roi Philippe Auguste.",
       meta: [
         "Échelle 1:35",
         "Polystyrène",
@@ -147,7 +147,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-medieval-5",
       title: "La Moisson",
       category: "Maquettes médiévales",
-      year: "2025",
+      year: "2017",
       featured: false,
       cover: "images/projects/project-diorama-medieval-5-cover.webp",
       images: [
@@ -162,8 +162,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-medieval-5.9.webp",
         "images/projects/project-diorama-medieval-5.10.webp"
       ],
-      summary: "Un décor de champ pensé pour accueillir plusieurs figurines de paysans.",
-      details: "Un décor de champ pensé pour accueillir plusieurs figurines de paysans.",
+      summary: "Scène de moisson au Moyen-Âge avec ses paysans.",
+      details: "Scène de moisson au Moyen-Âge avec ses paysans.",
       meta: [
         "Échelle 1:35",
         "Polystyrène",
@@ -173,7 +173,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-medieval-6",
       title: "La Chapelle",
       category: "Maquettes médiévales",
-      year: "2026",
+      year: "2022",
       featured: true,
       cover: "images/projects/project-diorama-medieval-6-cover.webp",
       images: [
@@ -191,8 +191,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-medieval-6.12.webp",
         "images/projects/project-diorama-medieval-6.13.webp",
       ],
-      summary: "Chappelle modulable conçue pour le château Castelrock, avec intérieur détaillé et vitraux.",
-      details: "Chappelle modulable conçue pour le château Castelrock, avec intérieur détaillé et vitraux.",
+      summary: "Chapelle inspirée de celle située à côté de Chateauneuf en Bourgogne.",
+      details: "Chapelle inspirée de celle située à côté de Chateauneuf en Bourgogne.",
       meta: [
         "Échelle 1:35",
         "Polystyrène · plâtre",
@@ -202,7 +202,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-antiquite-1",
       title: "Ville de Ravenne au VIIe siècle",
       category: "Maquettes Antiquité",
-      year: "2026",
+      year: "2024",
       featured: false,
       cover: "images/projects/project-diorama-antiquite-1.34.webp",
       images: [
@@ -257,8 +257,8 @@ window.PORTFOLIO_DATA = {
         { title: "Deuxième jet, avec les étals de marchands et divers accessoires", imageNumbers: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22] },
         { title: "Premier jet", imageNumbers: [1, 2, 3, 4, 5, 6, 7, 8] },
       ],
-      summary: "Décor de la ville de Ravenne au VIIe siècle, avec son marché pensé pour accueillir plusieurs figurines.",
-      details: "Décor de la ville de Ravenne au VIIe siècle, avec son marché pensé pour accueillir plusieurs figurines.",
+      summary: "Remparts de la cité de Ravenne au Ve siècle, nouvelle capitale de l'Empire Romain.",
+      details: "Remparts de la cité de Ravenne au Ve siècle, nouvelle capitale de l'Empire Romain.",
       meta: [
         "Échelle 1:35",
         "Polystyrène · balsa",
@@ -268,7 +268,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-antiquite-2",
       title: "Rome et Barbares",
       category: "Maquettes Antiquité",
-      year: "2026",
+      year: "2024",
       featured: false,
       cover: "images/projects/project-diorama-antiquite-2.1.webp",
       images: [
@@ -282,8 +282,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-antiquite-2.8.webp",
         "images/projects/project-diorama-antiquite-2.9.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Arrivée de représentants de rois barbares devant l'empereur romain pour négocier des traités de fédérés.",
+      details: "Arrivée de représentants de rois barbares devant l'empereur romain pour négocier des traités de fédérés.",
       meta: [
         "Échelle 1:35",
       ]
@@ -292,7 +292,7 @@ window.PORTFOLIO_DATA = {
       id: "project-figurine-antiquite-1",
       title: "Barbares",
       category: "Figurines Antiquité",
-      year: "2026",
+      year: "2016",
       featured: false,
       cover: "images/projects/project-figurine-antiquite-1.1.webp",
       images: [
@@ -302,8 +302,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-figurine-antiquite-1.4.webp",
         "images/projects/project-figurine-antiquite-1.5.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Figurines représentant quelques barbares de nationalités différentes (Wisigoth, Ostrogoth, Vandales).",
+      details: "Figurines représentant quelques barbares de nationalités différentes (Wisigoth, Ostrogoth, Vandales).",
       meta: [
         "Échelle 1:35",
       ]
@@ -312,7 +312,7 @@ window.PORTFOLIO_DATA = {
       id: "project-figurine-antiquite-2",
       title: "Jules César et sa suite",
       category: "Figurines Antiquité",
-      year: "2026",
+      year: "2017",
       featured: false,
       cover: "images/projects/project-figurine-antiquite-2.1.webp",
       images: [
@@ -320,8 +320,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-figurine-antiquite-2.2.webp",
         "images/projects/project-figurine-antiquite-2.3.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Jules César et son général Labiénus en route pour la Gaule.",
+      details: "Jules César et son général Labiénus en route pour la Gaule.",
       meta: [
         "Échelle 1:35",
       ]
@@ -330,7 +330,7 @@ window.PORTFOLIO_DATA = {
       id: "project-figurine-antiquite-3",
       title: "Personnages pour le diorama de Ravenne",
       category: "Figurines Antiquité",
-      year: "2026",
+      year: "2024",
       featured: false,
       cover: "images/projects/project-figurine-antiquite-3.1.webp",
       images: [
@@ -341,8 +341,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-figurine-antiquite-3.5.webp",
         "images/projects/project-figurine-antiquite-3.6.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Déléguation de diverses nationalités de l'antiquité tardive en visite à Ravenne.",
+      details: "Déléguation de diverses nationalités de l'antiquité tardive en visite à Ravenne.",
       meta: [
         "Échelle 1:35",
       ]
@@ -351,7 +351,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-creche-1",
       title: "La Crèche",
       category: "Décors de crèche",
-      year: "2026",
+      year: "2016",
       featured: false,
       cover: "images/projects/project-diorama-creche-1.1.webp",
       images: [
@@ -394,8 +394,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-creche-1.37.webp",
         "images/projects/project-diorama-creche-1.38.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Une vue d'une crèche inspirée d'un décors provencal avec une représentation de plusieurs corps de métier anciens.",
+      details: "Une vue d'une crèche inspirée d'un décors provencal avec une représentation de plusieurs corps de métier anciens.",
       meta: [
         "Taille 7cm",
       ]
@@ -404,7 +404,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-creche-2",
       title: "L'Huilerie",
       category: "Décors de crèche",
-      year: "2026",
+      year: "2024",
       featured: true,
       cover: "images/projects/project-diorama-creche-2-cover.webp",
       images: [
@@ -415,16 +415,18 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-creche-2.5.webp",
         "images/projects/project-diorama-creche-2.6.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Huilerie de type méditerrannéen, inspirée d'une petite huilerie de montagne de l'arrière pays varois. Idéale pour crèche.",
+      details: "Huilerie de type méditerrannéen, inspirée d'une petite huilerie de montagne de l'arrière pays varois. Idéale pour crèche.",
       meta: [
+        "Santons",
+        "Polystyrène · Balsa",
       ]
     },
     {/*Estaminet*/
       id: "project-diorama-creche-3",
       title: "L'Estaminet",
       category: "Décors de crèche",
-      year: "2026",
+      year: "2024",
       featured: false,
       cover: "images/projects/project-diorama-creche-3-cover.webp",
       images: [
@@ -433,8 +435,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-creche-3.3.webp",
         "images/projects/project-diorama-creche-3.4.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Maquette d'un café d'autrefois du nord de la France.",
+      details: "Maquette d'un café d'autrefois du nord de la France.",
       meta: [
       ]
     },
@@ -442,7 +444,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-creche-4",
       title: "La Chapelle",
       category: "Décors de crèche",
-      year: "2026",
+      year: "2021",
       featured: false,
       cover: "images/projects/project-diorama-creche-4-cover.webp",
       images: [
@@ -455,8 +457,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-creche-4.7.webp",
         "images/projects/project-diorama-creche-4.8.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Petite chapelle typique de la Provence.",
+      details: "Petite chapelle typique de la Provence.",
       meta: [
       ]
     },
@@ -464,7 +466,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-creche-5",
       title: "L'atelier de poterie",
       category: "Décors de crèche",
-      year: "2026",
+      year: "2024",
       featured: false,
       cover: "images/projects/project-diorama-creche-5-cover.webp",
       images: [
@@ -474,8 +476,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-creche-5.4.webp",
         "images/projects/project-diorama-creche-5.5.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Maquette d'une poterie à l'ancienne typique de l'artisanat local.",
+      details: "Maquette d'une poterie à l'ancienne typique de l'artisanat local.",
       meta: [
       ]
     },
@@ -483,7 +485,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-creche-6",
       title: "La Boulangerie",
       category: "Décors de crèche",
-      year: "2026",
+      year: "2024",
       featured: false,
       cover: "images/projects/project-diorama-creche-6-cover.webp",
       images: [
@@ -491,8 +493,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-creche-6.2.webp",
         "images/projects/project-diorama-creche-6.3.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Maquette d'une boulangerie à l'ancienne au bon pain d'autrefois cuits au feu de bois.",
+      details: "Maquette d'une boulangerie à l'ancienne au bon pain d'autrefois cuits au feu de bois.",
       meta: [
       ]
     },
@@ -500,7 +502,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-creche-7",
       title: "Le Fleuriste",
       category: "Décors de crèche",
-      year: "2026",
+      year: "2025",
       featured: false,
       cover: "images/projects/project-diorama-creche-7-cover.webp",
       images: [
@@ -509,8 +511,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-creche-7.3.webp",
         "images/projects/project-diorama-creche-7.4.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Hômmage à mon épouse qui adore les fleurs.",
+      details: "Hômmage à mon épouse qui adore les fleurs.",
       meta: [
       ]
     },
@@ -518,7 +520,7 @@ window.PORTFOLIO_DATA = {
       id: "project-diorama-creche-8",
       title: "L'Hôtel",
       category: "Décors de crèche",
-      year: "2026",
+      year: "2025",
       featured: false,
       cover: "images/projects/project-diorama-creche-8-cover.webp",
       images: [
@@ -526,8 +528,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-diorama-creche-8.2.webp",
         "images/projects/project-diorama-creche-8.3.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Petit hôtel de campagne pour les invités de passages.",
+      details: "Petit hôtel de campagne pour les invités de passages.",
       meta: [
       ]
     },
@@ -535,7 +537,7 @@ window.PORTFOLIO_DATA = {
       id: "project-figurine-santon-1.",
       title: "Figurines santons",
       category: "Santons",
-      year: "2026",
+      year: "2024",
       featured: false,
       cover: "images/projects/project-figurine-santon-1.1.webp",
       images: [
@@ -543,8 +545,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-figurine-santon-1.2.webp",
         "images/projects/project-figurine-santon-1.3.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Différents santons dont certains peints à la main, d'autres modelés par mes soins puis peints.",
+      details: "Différents santons dont certains peints à la main, d'autres modelés par mes soins puis peints.",
       meta: [
       ]
     },
@@ -552,7 +554,7 @@ window.PORTFOLIO_DATA = {
       id: "project-figurine-santon-2",
       title: "Animaux santons",
       category: "Santons",
-      year: "2026",
+      year: "2024",
       featured: false,
       cover: "images/projects/project-figurine-santon-2.1.webp",
       images: [
@@ -564,8 +566,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-figurine-santon-2.6.webp",
         "images/projects/project-figurine-santon-2.7.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Animaux santons modelés à la main et peints par mes soins.",
+      details: "Animaux santons modelés à la main et peints par mes soins.",
       meta: [
       ]
     },
@@ -573,7 +575,7 @@ window.PORTFOLIO_DATA = {
       id: "project-other-1",
       title: "Maubeuge",
       category: "Autres",
-      year: "2026",
+      year: "2023",
       featured: false,
       cover: "images/projects/project-other-1-cover.webp",
       images: [
@@ -585,8 +587,8 @@ window.PORTFOLIO_DATA = {
         "images/projects/project-other-1.6.webp",
         "images/projects/project-other-1.7.webp",
       ],
-      summary: "Maquette de la ville de Maubeuge au VIIe siècle",
-      details: "Maquette de la naissance de la ville de Maubeuge au VIIe siècle, à partir du cloître fondé par Aldegonde (qui deviendra Sainte Aldegonde, patronne de la ville.) Maquette exposée en permanence à l'église Saint Pierre et Paul de Maubeuge (59600, France)",
+      summary: "Représentation hypothétique de la naissance de la ville de Maubeuge au VIe siècle.",
+      details: "Maquette de la naissance de la ville de Maubeuge au VIe siècle, à partir du cloître fondé par Aldegonde (qui deviendra Sainte Aldegonde, patronne de la ville.) Maquette exposée en permanence à l'église Saint Pierre et Paul de Maubeuge (59600, France)",
       meta: [
         "Echelle 1:72",
       ]
@@ -595,14 +597,14 @@ window.PORTFOLIO_DATA = {
       id: "project-other-2",
       title: "Statue de Sainte Aldegonde",
       category: "Autres",
-      year: "2026",
+      year: "2022",
       featured: false,
       cover: "images/projects/project-other-2.1.webp",
       images: [
         "images/projects/project-other-2.1.webp",
       ],
-      summary: "",
-      details: "",
+      summary: "Représentation de la statue de la chapelle Ste Aldegonde à Maubeuge, peint à la main.",
+      details: "Représentation de la statue de la chapelle Ste Aldegonde à Maubeuge, peint à la main.",
       meta: [
       ]
     },
